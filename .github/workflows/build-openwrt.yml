@@ -59,8 +59,8 @@ jobs:
       run: |
         df -hT $PWD
         #git clone $REPO_URL -b $REPO_BRANCH openwrt
-        git clone https://git.openwrt.org/openwrt/openwrt.git
-        git clone https://github.com/badaix/snapos.git 
+        git clone https://git.openwrt.org/openwrt/openwrt.git 
+        git clone https://github.com/badaix/snapos.git /workdir/openwrt/package
         ln -s /workdir/snapos/openwrt /workdir/openwrt/package/snapcast
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
